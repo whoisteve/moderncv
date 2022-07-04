@@ -94,11 +94,13 @@
       {%
         \if@left%
           \hspace*{\separatorcolumnwidth}\fi%
+        \begin{tabular}[c]{@{}r@{}}%
         \color{color1}%
         \setlength{\fboxrule}{\@photoframewidth}%
         \ifdim\@photoframewidth=0pt%
           \setlength{\fboxsep}{0pt}\fi%
         \framebox{\includegraphics[width=\@photowidth]{\@photo}}}%
+        \end{tabular}%
         \if@right%
           \hspace*{\separatorcolumnwidth}\fi}%
   % name and title (pre-rendering)
